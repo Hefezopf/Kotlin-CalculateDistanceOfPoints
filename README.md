@@ -1,5 +1,5 @@
 # KotlinCalcPoints
-The Ktolin Programm calculates the minimum distance of points.
+The Kotlin Programm calculates the minimum distance of points.
 
 ## Build
 gradle build
