@@ -1,4 +1,4 @@
-package org
+package main.kotlin.de.hopf
 
 class Calculator {
 }
