@@ -1,11 +1,16 @@
 package test.kotlin.de.hopf
 
-import kotlin.test.Test
+import main.kotlin.de.hopf.Point
+import org.junit.Test
 import kotlin.test.assertEquals
 
 class PointTest {
     @Test
     fun testPoint() {
-        assertEquals("Kotlin", "test")
+        val p1 = Point(1, 4)
+        val p2 = Point(2, 3)
+        assertEquals("Kotlin", "Kotlin")
+        assertEquals(1, p1.x)
+        assertEquals(4, p1.y)
     }
 }

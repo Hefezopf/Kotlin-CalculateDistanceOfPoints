@@ -1,2 +1,0 @@
-D:\playground\kotlin\KotlinCalcPoints\src\test\kotlin\de\hopf\CalculatorTest.kt
-D:\playground\kotlin\KotlinCalcPoints\src\test\kotlin\de\hopf\PointTest.kt
