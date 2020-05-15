@@ -1,17 +1,16 @@
+
 package main.kotlin.de.hopf
 
 class Calculator {
 }
 
 fun main(args: Array<String>) {
-    println("Start!!!!!!")
-    val p1 = Point(1, 4)
-    val p2 = Point(2, 3)
-    val p3 = Point(3, 2)
-    val p4 = Point(4, 1)
-    val points = arrayOf(p1, p2, p3, p4)
-    val minDistance = determineMinimum(p1, p2)
-    println("Distance:$minDistance")
+    println("Start App...")
+    val pA = Point(1, 1)
+    val pB = Point(1, 3)
+    val pC = Point(4, 4)
+    val pD = Point(6, 1)
+    val points = arrayOf(pA, pB, pC, pD)
     val minDistanceOfArray = determineMinimumOfArray(points)
-    println("Distance of Array:$minDistanceOfArray")
+    println("Minimum distance of all points = $minDistanceOfArray")
 }
