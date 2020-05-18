@@ -1,4 +1,4 @@
-package main.kotlin.de.hopf
+package de.hopf
 
 import kotlin.math.pow
 import kotlin.math.sqrt

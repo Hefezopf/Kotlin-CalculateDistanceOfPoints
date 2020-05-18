@@ -37,9 +37,11 @@ I suggest to develop with editor from Idea Intellij
 
 ## Run
 
-TODO: ./grandlew run
+gradle run
 
-Instead run with intellij: Run CalculatorKt
+or
+
+Run with intellij IDEA: Run CalculatorKt
 
 Output:
 

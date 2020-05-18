@@ -1,7 +1,7 @@
 package test.kotlin.de.hopf
 
-import main.kotlin.de.hopf.Point
-import main.kotlin.de.hopf.determineMinimum
+import de.hopf.Point
+import de.hopf.determineMinimum
 import org.junit.Test
 import kotlin.test.assertEquals
 
