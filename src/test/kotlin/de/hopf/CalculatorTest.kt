@@ -1,4 +1,4 @@
-package test.kotlin.de.hopf
+package de.hopf
 
 import de.hopf.Point
 import de.hopf.determineMinimum
