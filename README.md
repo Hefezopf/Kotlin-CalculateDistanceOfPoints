@@ -37,11 +37,10 @@ I suggest to develop with editor from Idea Intellij
 
 ## Run
 
-<<<<<<< HEAD
+
 TODO: ./gradlew run
-=======
+
 gradle run
->>>>>>> 06d94ae1f1379ef872ba8c337d49fa036bd9ae8e
 
 or
 
