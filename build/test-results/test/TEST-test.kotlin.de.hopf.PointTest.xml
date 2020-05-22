@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="test.kotlin.de.hopf.PointTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-22T06:03:44" hostname="LAPTOP-MARKUS" time="0.0">
+=======
+<testsuite name="test.kotlin.de.hopf.PointTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-18T13:28:20" hostname="DESKTOP-FF443BI" time="0.0">
+>>>>>>> 06d94ae1f1379ef872ba8c337d49fa036bd9ae8e
   <properties/>
   <testcase name="testPoint" classname="test.kotlin.de.hopf.PointTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

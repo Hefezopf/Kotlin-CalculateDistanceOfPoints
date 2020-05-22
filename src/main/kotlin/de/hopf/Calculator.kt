@@ -1,5 +1,6 @@
+@file:JvmName("CalculatorApp")
 
-package main.kotlin.de.hopf
+package de.hopf
 
 class Calculator {
 }
