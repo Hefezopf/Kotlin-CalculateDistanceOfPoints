@@ -24,8 +24,7 @@ Minimum distance of all points = 2.0
 
 **gradle test**
 
-
-## Report
+And Test report
 
 \build\reports\tests\test\index.html
 
