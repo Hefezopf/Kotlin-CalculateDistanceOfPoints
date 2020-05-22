@@ -1,16 +1,32 @@
 package de.hopf
 
+import java.util.*
 import kotlin.math.pow
 import kotlin.math.sqrt
+
 
 data class Point(var x: Int, var y: Int) {
 }
 
-fun parseToCoord(s: String): IntArray {
-    var xy: List<String> = s.replace(Regex("[^\\w\\d]"), "").split("")
+fun parseAllCoords(allCoords: Array<String>): Array<Point> {
+    var points: Array<Point>
+    val pointsList: MutableList<Point> = ArrayList()
+    for (coord in allCoords) { // "(4,3)", "(5,2)", ...
+        val xy: IntArray = parseToCoord(coord)
+        // println(xy[0].toString() + " " + xy[1])
+        pointsList.add(Point(xy[0], xy[1]))
+    }
+    points = pointsList.toTypedArray()
+
+    return points
+}
+
+fun parseToCoord(coord: String): IntArray {
+    var xy: List<String> = coord.replace(Regex("[^\\w\\d]"), "").split("")
     val res: IntArray = IntArray(2)
     res[0] = xy[1].toInt()
     res[1] = xy[2].toInt()
+
     return res
 }
 
@@ -25,6 +41,7 @@ fun determineMinimumOfArray(points: Array<Point>): Double {
         val startPoint = points[i]
         min = calculate(points, startPoint, min, i)
     }
+
     return min
 }
 
@@ -36,5 +53,6 @@ private fun calculate(points: Array<Point>, startPoint: Point, minimum: Double, 
             min = minTemp
         }
     }
+
     return min
 }

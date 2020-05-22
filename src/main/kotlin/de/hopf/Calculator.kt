@@ -10,15 +10,8 @@ fun main(args: Array<String>) {
 
     var points = arrayOf<Point>()
     //val argsArray = arrayOf<String>("(1,9)", "(1,1)")
-    if (args.isNotEmpty()) {  // if (args.length > 0) {
-        val pointsList = mutableListOf<Point>()
-        for (arg in args) { // "(4,3)", "(5,2)", ...
-            val xy = parseToCoord(arg);
-            //println("(${xy[0]},${xy[1]})");
-            pointsList.add(Point(xy[0], xy[1]));
-        }
-        points = pointsList.toTypedArray();
-
+    if (args.isNotEmpty()) {
+        points = parseAllCoords(args);
     } else {
         var pointsFixed = arrayOf<Point>()
         pointsFixed[0] = Point(1, 1);
