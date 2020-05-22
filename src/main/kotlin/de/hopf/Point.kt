@@ -3,7 +3,15 @@ package de.hopf
 import kotlin.math.pow
 import kotlin.math.sqrt
 
-data class Point (var x: Int, var y: Int) {
+data class Point(var x: Int, var y: Int) {
+}
+
+fun parseToCoord(s: String): IntArray {
+    var xy: List<String> = s.replace(Regex("[^\\w\\d]"), "").split("")
+    val res: IntArray = IntArray(2)
+    res[0] = xy[1].toInt()
+    res[1] = xy[2].toInt()
+    return res
 }
 
 fun determineMinimum(p1: Point, p2: Point): Double {

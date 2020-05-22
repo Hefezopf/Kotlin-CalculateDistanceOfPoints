@@ -1,8 +1,5 @@
 package de.hopf
 
-import de.hopf.Point
-import de.hopf.determineMinimum
-import de.hopf.determineMinimumOfArray
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -18,7 +15,18 @@ class CalculatorTest {
     }
 
     @Test
-    fun testDetermineMinimumOfArray() {
+    fun testDetermineMinimumOfArray1() {
+        val pA = Point(1, 1)
+        val pB = Point(4, 4)
+        val pC = Point(6, 1)
+        val points: Array<Point> = arrayOf<Point>(pA, pB, pC)
+        var minDistance = determineMinimumOfArray(points)
+        var minDistanceExp = 3.605551275463989
+        assertEquals(minDistanceExp, minDistance)
+    }
+
+    @Test
+    fun testDetermineMinimumOfArray2() {
         val pA = Point(1, 1)
         val pB = Point(1, 3)
         val pC = Point(4, 4)

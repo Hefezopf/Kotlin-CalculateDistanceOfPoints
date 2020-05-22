@@ -11,18 +11,18 @@ Minimum distance of all points = 2.0
 
 ## Build
 
-gradle build
+**gradle build**
 
-gradle compileKotlin
+**gradle compileKotlin**
 
-gradle compileTestKotlin
+**gradle compileTestKotlin**
 
-./gradlew tasks
+**./gradlew tasks**
 
 
 ## Test
 
-gradle test
+**gradle test**
 
 
 ## Report
@@ -37,7 +37,7 @@ I suggest to develop with editor from Idea Intellij
 
 ## Run
 
-gradle run
+**gradle run**
 
 or
 
@@ -45,9 +45,24 @@ Run with intellij IDEA: Run CalculatorKt
 
 Output:
 
-Start App...
+>Start App...
+>
+>Minimum distance of all points = 2.0
 
-Minimum distance of all points = 2.0
+or run with params
+
+**gradle run --args="(4,3) (5,2) (1,1) (1,2)"**
+
+Calling the app with this params should result in:
+
+Output:
+
+>Start App...
+>
+>Minimum distance of all points = 1.0
+
+Hint: Only use single digit numbers as point coordinates like (4,3)!
+
 
 ## Travis
 
