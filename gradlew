@@ -22,7 +22,7 @@
 ##
 ##############################################################################
 
-chmod +x gradlew
+git update-index --chmod=+x gradlew
 
 # Attempt to set APP_HOME
 # Resolve links: $0 may be a link
