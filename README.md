@@ -37,7 +37,7 @@ I suggest to develop with editor from Idea Intellij
 
 ## Run
 
-TODO: ./grandlew run
+TODO: ./gradlew run
 
 Instead run with intellij: Run CalculatorKt
 
@@ -46,3 +46,4 @@ Output:
 Start App...
 
 Minimum distance of all points = 2.0
+
