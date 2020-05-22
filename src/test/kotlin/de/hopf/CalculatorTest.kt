@@ -13,6 +13,6 @@ class CalculatorTest {
         var minDistance = determineMinimum(p1, p2)
         var minDistanceExp = 1.4142135623730951
         assertEquals(minDistanceExp, minDistance)
-        assertEquals("XKotlin", "Kotlin")
+        assertEquals("Kotlin", "Kotlin")
     }
 }
