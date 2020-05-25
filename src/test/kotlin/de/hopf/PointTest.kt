@@ -8,7 +8,7 @@ class PointTest {
 
     @Test
     fun testPoint() {
-        val p1 = Point(1, 4)
+        val p1 = Point(2, 4)
 
         assertEquals(1, p1.x)
         assertEquals(4, p1.y)
