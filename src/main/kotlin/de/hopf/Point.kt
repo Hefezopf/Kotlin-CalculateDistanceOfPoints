@@ -8,16 +8,13 @@ data class Point(var x: Int, var y: Int) {
 }
 
 fun parseAllCoords(allCoords: Array<String>): Array<Point> {
-    var points: Array<Point>
     val pointsList: MutableList<Point> = ArrayList()
     for (coord in allCoords) { // "(4,3)", "(5,2)", ...
         val xy: IntArray = parseToCoord(coord)
-        // println(xy[0].toString() + " " + xy[1])
         pointsList.add(Point(xy[0], xy[1]))
     }
-    points = pointsList.toTypedArray()
 
-    return points
+    return pointsList.toTypedArray()
 }
 
 fun parseToCoord(coord: String): IntArray {

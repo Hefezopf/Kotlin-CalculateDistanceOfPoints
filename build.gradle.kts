@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClassName = "de.hopf.CalculatorApp"
+    mainClassName = "de.hopf.App"
 }
 
 repositories {
