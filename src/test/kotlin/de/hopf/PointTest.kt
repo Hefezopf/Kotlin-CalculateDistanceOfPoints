@@ -34,7 +34,7 @@ class PointTest {
     fun testParseToCoord1() {
         val coords = "(4,3)"
 
-        val res = parseToCoord(coords)
+        val res = PointUtil().parseToCoord(coords)
 
         assertEquals(2, res.size)
         assertEquals(4, res.get(0))
@@ -45,7 +45,7 @@ class PointTest {
     fun testParseToCoord2() {
         val coords = "(4 3)"
 
-        val res = parseToCoord(coords)
+        val res = PointUtil().parseToCoord(coords)
 
         assertEquals(2, res.size)
         assertEquals(4, res.get(0))
@@ -57,7 +57,7 @@ class PointTest {
         val pA = Point(1, 4)
         val pB = Point(2, 3)
 
-        var minDistance = determineMinimum(pA, pB)
+        var minDistance = PointUtil().determineMinimum(pA, pB)
 
         assertEquals(1.4142135623730951, minDistance)
     }
@@ -69,7 +69,7 @@ class PointTest {
         val pC = Point(6, 1)
         val points: Array<Point> = arrayOf<Point>(pA, pB, pC)
 
-        var minDistance = determineMinimumOfArray(points)
+        var minDistance = PointUtil().determineMinimumOfArray(points)
 
         assertEquals(3.605551275463989, minDistance)
     }
@@ -82,7 +82,7 @@ class PointTest {
         val pD = Point(6, 1)
         val points: Array<Point> = arrayOf<Point>(pA, pB, pC, pD)
 
-        var minDistance = determineMinimumOfArray(points)
+        var minDistance = PointUtil().determineMinimumOfArray(points)
 
         assertEquals(2.0, minDistance)
     }

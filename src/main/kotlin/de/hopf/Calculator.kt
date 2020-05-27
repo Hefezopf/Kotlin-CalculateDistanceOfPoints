@@ -21,6 +21,6 @@ fun main(args: Array<String>) {
         pointsList.toTypedArray()
     }
 
-    val minDistanceOfArray = determineMinimumOfArray(points)
+    val minDistanceOfArray = PointUtil().determineMinimumOfArray(points)
     println("Minimum distance of all points = $minDistanceOfArray")
 }
