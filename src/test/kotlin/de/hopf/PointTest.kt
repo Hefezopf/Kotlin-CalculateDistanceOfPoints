@@ -17,7 +17,7 @@ class PointTest {
     fun testParseAllCoords() {
         val coords = arrayOf<String>("(4,3)", "(5,2)", "(1,1)", "(1,2)")
 
-        val res = parseAllCoords(coords)
+        val res = PointUtil().parseAllCoords(coords)
 
         assertEquals(4, res.size)
         assertEquals(4, res[0].x)

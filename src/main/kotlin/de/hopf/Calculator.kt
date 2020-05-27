@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     println("Start App...")
 
     var points = if (args.isNotEmpty()) {
-        parseAllCoords(args);
+        PointUtil().parseAllCoords(args);
     } else {
         val pointsList: MutableList<Point> = ArrayList()
         pointsList.add(Point(1, 1));
