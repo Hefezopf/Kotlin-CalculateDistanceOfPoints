@@ -24,8 +24,19 @@ class PointUtil() {
         return res
     }
 
-    fun determineMinimum(p1: Point, p2: Point): Double {
+    fun determineDistance(p1: Point, p2: Point): Double {
         return sqrt((p2.x - p1.x).toDouble().pow(2.0) + (p2.y - p1.y).toDouble().pow(2.0))
+    }
+
+    fun determineMaximumOfArray(points: Array<Point>): Double {
+        require(points.isNotEmpty()) { "too less points" }
+        var max = Double.NEGATIVE_INFINITY
+        for (i in points.indices) {
+            val startPoint = points[i]
+            max = calculateMaximum(points, startPoint, max, i)
+        }
+
+        return max
     }
 
     fun determineMinimumOfArray(points: Array<Point>): Double {
@@ -33,16 +44,28 @@ class PointUtil() {
         var min = Double.POSITIVE_INFINITY
         for (i in points.indices) {
             val startPoint = points[i]
-            min = calculate(points, startPoint, min, i)
+            min = calculateMinimum(points, startPoint, min, i)
         }
 
         return min
     }
 
-    private fun calculate(points: Array<Point>, startPoint: Point, minimum: Double, startVal: Int): Double {
+    private fun calculateMaximum(points: Array<Point>, startPoint: Point, maximum: Double, startVal: Int): Double {
+        var max = maximum
+        for (i in startVal + 1 until points.size) {
+            val maxTemp = determineDistance(startPoint, points[i])
+            if (maxTemp > max) {
+                max = maxTemp
+            }
+        }
+
+        return max
+    }
+
+    private fun calculateMinimum(points: Array<Point>, startPoint: Point, minimum: Double, startVal: Int): Double {
         var min = minimum
         for (i in startVal + 1 until points.size) {
-            val minTemp = determineMinimum(startPoint, points[i])
+            val minTemp = determineDistance(startPoint, points[i])
             if (minTemp < min) {
                 min = minTemp
             }
