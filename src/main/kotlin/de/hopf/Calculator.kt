@@ -23,4 +23,6 @@ fun main(args: Array<String>) {
 
     val minDistanceOfArray = PointUtil().determineMinimumOfArray(points)
     println("Minimum distance of all points = $minDistanceOfArray")
+    val maxDistanceOfArray = PointUtil().determineMaximumOfArray(points)
+    println("Maximum distance of all points = $maxDistanceOfArray")
 }
