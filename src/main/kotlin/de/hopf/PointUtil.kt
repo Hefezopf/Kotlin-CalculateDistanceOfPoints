@@ -1,6 +1,7 @@
 package de.hopf
 
-import java.util.ArrayList
+import java.text.NumberFormat
+import java.util.*
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -36,7 +37,7 @@ class PointUtil() {
             max = calculateMaximum(points, startPoint, max, i)
         }
 
-        return max
+        return limitValue(max, 2)
     }
 
     fun determineMinimumOfArray(points: Array<Point>): Double {
@@ -47,7 +48,21 @@ class PointUtil() {
             min = calculateMinimum(points, startPoint, min, i)
         }
 
-        return min
+        return limitValue(min, 2)
+    }
+
+    private fun limitValue(value: Double, digits: Int): Double {
+        var erg = 0.0
+        var nf = NumberFormat.getInstance(Locale.ENGLISH)
+        nf.minimumFractionDigits = digits
+        nf.maximumFractionDigits = digits
+        try {
+            var s = nf.format(value)
+            erg = s.toDouble()
+        } catch (e: NumberFormatException) {
+            e.printStackTrace()
+        }
+        return erg
     }
 
     private fun calculateMaximum(points: Array<Point>, startPoint: Point, maximum: Double, startVal: Int): Double {

@@ -69,7 +69,7 @@ class PointUtilTest {
 
         var maxDistance = PointUtil().determineMaximumOfArray(points)
 
-        assertEquals(4.242640687119285, maxDistance)
+        assertEquals(4.24, maxDistance)
     }
 
     @Test
@@ -78,7 +78,7 @@ class PointUtilTest {
 
         var maxDistance = PointUtil().determineMaximumOfArray(points)
 
-        assertEquals(5.385164807134504, maxDistance)
+        assertEquals(5.39, maxDistance)
     }
 
     @Test
@@ -96,7 +96,7 @@ class PointUtilTest {
 
         var minDistance = PointUtil().determineMinimumOfArray(points)
 
-        assertEquals(3.605551275463989, minDistance)
+        assertEquals(3.61, minDistance)
     }
 
     @Test
